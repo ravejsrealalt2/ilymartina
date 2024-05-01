@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Do you still love me?</title>
+<style>
+  body {
+    background-color: #f2f2f2; /* chill white background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  .container {
+    text-align: center;
+  }
+  .question {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* fancy text font */
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  .yes {
+    color: green;
+  }
+  .no {
+    color: red;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="question">Do you still love me?</div>
+  <div class="buttons">
+    <button class="button yes" onclick="showLove()">Yes</button>
+    <button class="button no" onclick="confirmNo()">No</button>
+  </div>
+</div>
+
+<script>
+  function confirmNo() {
+    document.querySelector('.yes').style.transform = "scale(1.2)";
+    document.querySelector('.no').innerText = "Are you sure?";
+    document.querySelector('.no').onclick = function() {
+      alert("Oh no! That's sad.");
+    };
+  }
+
+  function showLove() {
+    window.open('', '_blank').document.write('<div style="text-align: center; font-weight: bold; color: black;">I love you too martina</div><img src="https://x0.at/-VwW.png" alt="First Image"><img src="https://x0.at/gpXI.png" alt="Second Image">');
+  }
+</script>
+</body>
+</html>
